@@ -9,7 +9,9 @@
     <Grid>
         <DockPanel>
             <StackPanel>
-                <Button Click="Button_Click">Entrar</Button>
+                <Button Click="Button_Click">Relatorio Receber</Button>
+                <Button Click="Button_Click_1" Margin="0 10 0 0">Linhas Vermelhas</Button>
+                <Button Margin="0 10 0 0" Click="Button_Click_2">Troco Incorreto</Button>
             </StackPanel>
         </DockPanel>
     </Grid>

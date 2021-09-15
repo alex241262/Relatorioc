@@ -7,23 +7,28 @@
         mc:Ignorable="d"
         Title="Janela2">
     <Grid>
-        <DockPanel DockPanel.Dock="Top" >
-        <StackPanel >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="124*"/>
+            <RowDefinition Height="129*"/>
+        </Grid.RowDefinitions>
+        <DockPanel Margin="0,0,-0.4,-0.4" Grid.RowSpan="2" >
+            <StackPanel >
                 <StackPanel Orientation="Horizontal">
-                                <DatePicker Width="100" Name="dat1" Margin="10 0 0 0"/>
-                                <DatePicker Width="100" Name="dat2" Margin="10 0 0 0"></DatePicker>
-                                <ComboBox Name="EMPRESA" Width="100" Margin="10 0 0 0" FontSize="14">
-                                    <ComboBoxItem IsSelected="True" Content="Matriz"/>
-                                    <ComboBoxItem Content="Aleixo"/> 
-                                    <ComboBoxItem Content="Raiz"/>
-                                    <ComboBoxItem Content="Alvorada"/>
-                                    <ComboBoxItem Content="Tintas"/>
-                                    <ComboBoxItem Content="Motos"/>
-                                </ComboBox>
+                    <DatePicker Width="100" Name="dat1" Margin="10 0 0 0"/>
+                    <DatePicker Width="100" Name="dat2" Margin="10 0 0 0"></DatePicker>
+                    <ComboBox Name="EMPRESA" Width="100" Margin="10 0 0 0" FontSize="14">
+                        <ComboBoxItem IsSelected="True" Content="Matriz"/>
+                        <ComboBoxItem Content="Aleixo"/>
+                        <ComboBoxItem Content="Raiz"/>
+                        <ComboBoxItem Content="Alvorada"/>
+                        <ComboBoxItem Content="Tintas"/>
+                        <ComboBoxItem Content="Motos"/>
+                    </ComboBox>
                     <ComboBox Width="100" Margin="10 0 0 0" Name="combomod">
                         <ComboBoxItem Content="55" Cursor="Hand" IsSelected="True"></ComboBoxItem>
-                        <ComboBoxItem Content="65" Cursor="Hand"></ComboBoxItem> </ComboBox>
-                                <Button Width="100" Click="Button_Click" Margin="10 0 0 0">Gerar</Button>
+                        <ComboBoxItem Content="65" Cursor="Hand"></ComboBoxItem>
+                    </ComboBox>
+                    <Button Width="100" Click="Button_Click" Margin="10 0 0 0">Gerar</Button>
                     <Button Width="100" Margin="10 0 0 0" Click="Button_Click_1">IMP/EXCEL</Button>
 
                 </StackPanel>
